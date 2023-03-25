@@ -1,14 +1,11 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
-import MyNavbar from './components/Navbar/Navbar'
+import React from 'react';
+import Login from './components/Login/Login';
 
-const inter = Inter({ subsets: ['latin'] })
+export default function LoginPage() {
 
-export default function Home() {
   return (
-    <main className={styles.main}>
-      <MyNavbar />
-    </main>
+    <>
+    <Login/>
+    </>
   )
 }

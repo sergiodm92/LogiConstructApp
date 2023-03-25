@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 100px;
+  height: 60px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   z-index: 100;
@@ -21,7 +21,14 @@
 }
 
 .navbar__list li {
+  display: flex;
   margin: 0 20px;
+  width: 130px;
+  height: 40px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 10px;
+  align-items: center;
 }
 
 .navbar__list a {
@@ -35,8 +42,9 @@
   transition: color 0.3s ease;
 }
 
-.navbar__list a:hover {
-  color: #000;
+.navbar__list li:hover{
+  border-style:solid ;
+  border-width: 1px;
 }
 
 /* Opción Responsive */
@@ -63,6 +71,8 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     flex-direction: column;
     padding: 10px 0;
+    align-items: center;
+
   }
   
   .navbar__list li {
